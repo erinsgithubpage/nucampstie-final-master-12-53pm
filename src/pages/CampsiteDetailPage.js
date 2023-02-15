@@ -1,7 +1,7 @@
 import { Container, Row } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import { selectCampsiteById } from '../features/campsites/campsitesSlice';
-import CampsiteDetail from '../featuures/campsites/CampsiteDetail';
+import CampsiteDetail from '../features/campsites/CampsiteDetail';
 
 const CampsiteDetailPage = () => {
     const { campsiteId } = useParams();
@@ -10,10 +10,10 @@ const CampsiteDetailPage = () => {
     return (
         <Container>
             <Row>
-               <CampsiteDetail campsite={campsite} />
+                <CampsiteDetail campsite={campsite} />
             </Row>
         </Container>
-    )
+    );
 };
 
 export default CampsiteDetailPage;
